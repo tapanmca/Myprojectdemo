@@ -11,6 +11,8 @@ public class MySpringBoot {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
+		//This is my second comit
+		//This wiil shown only after 1 commit
 		System.out.println("My First Spring Boot Application1");
 		SpringApplication.run(MySpringBoot.class, args);
 	}
