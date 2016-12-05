@@ -15,9 +15,8 @@ public class MySpringBoot {
 		//This wiil shown only after 1 commit
 		System.out.println("My First Spring Boot Application1 using repository");
 		SpringApplication.run(MySpringBoot.class, args);
-	//This is the third comit
-		//Difference is color of the comit
 	
+	//This is the third comit
 				
 	}
 
