@@ -1,16 +1,18 @@
 package com.airdit.rest;
+import org.springframework.boot.autoconfigure.EnableAutoConfiguration;
+import org.springframework.context.annotation.ComponentScan;
 import org.springframework.http.MediaType;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RestController;
- 
-@RequestMapping("/airdit/**")
+
+@RequestMapping("/airdit")
 @RestController
 public class Helloworldcontroler {
-	@RequestMapping(method=RequestMethod.GET,produces={MediaType.APPLICATION_JSON_VALUE},value="/{_param}")
-	public String getProcess(@PathVariable String _param)
+	@RequestMapping(method=RequestMethod.GET)
+	public String getProcess()
 	{
-		return "Hello : "+_param;
+		return "Hello world: ";
 	}
 }
